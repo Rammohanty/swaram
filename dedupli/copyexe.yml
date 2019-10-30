@@ -1,0 +1,13 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  #become: yes
+  tasks:
+  - name: "copyfile"
+    copy:
+     src: /home/hasindu/sorting_framework/main
+     dest: /genomics/sorting_framework/dedupli
+     #owner: root
+     #group: root
+     mode: 0755
+

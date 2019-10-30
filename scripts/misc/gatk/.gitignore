@@ -1,0 +1,6 @@
+gatk_vcf
+gatk_stderr
+Broad.human.exome.b37.interval_list
+begin_interval.txt
+endsam.txt
+*.jar

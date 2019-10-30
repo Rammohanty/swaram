@@ -1,0 +1,7 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  tasks:
+  - name: "run"
+    shell: /genomics/sorting_framework/separate 2> /genomics/scratch/separate.txt
+

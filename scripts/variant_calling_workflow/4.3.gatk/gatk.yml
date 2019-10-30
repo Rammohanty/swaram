@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  tasks:
+  - name: "gatk"
+    shell:  java -Xmx1600M -jar /genomics/gatk/GenomeAnalysisTK.jar -R /genomics/reference/human-genome.fa -T HaplotypeCaller -I /genomics/scratch/tmp.bam -o /genomics/scratch/out.vcf -L /genomics/regions.interval_list -nct 8 >/genomics/scratch/gatk.out 2>/genomics/scratch/gatk.err

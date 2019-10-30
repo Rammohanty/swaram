@@ -1,0 +1,9 @@
+- hosts: nodes
+  gather_facts: no
+  remote_user: odroid
+  sudo: no
+  sudo_user: root
+  tasks:
+  - name: "run"
+    shell: /home/odroid/sorting_framework/main /home/odroid/sorting_framework/data/set1.sam /home/odroid/sorting_framework/data/manual1.sam 80000
+

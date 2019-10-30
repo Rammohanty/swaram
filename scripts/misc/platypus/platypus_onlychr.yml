@@ -1,0 +1,6 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  tasks:
+  - name: "platy"
+    shell:  /usr/bin/time python /genomics/platypus/Platypus.py callVariants --bamFiles=/genomics/scratch/tmp.bam --refFile=/genomics/reference/human.fa --output=/genomics/scratch/out.vcf --nCPU=8 --assemble=1 --regions=$(cat /genomics/regions_varcall.conf) >/genomics/scratch/platyout.txt 2>/genomics/scratch/platyerr.txt

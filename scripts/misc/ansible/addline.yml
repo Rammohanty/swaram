@@ -1,0 +1,11 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  become: yes
+  tasks:
+  - name: "editline"
+    lineinfile:
+     dest: /etc/fstab
+     #line: 'tmpfs   /ramdisk tmpfs   nodev,nosuid,noexec,nodiratime,size=400M   0 0'
+     #line: '//192.168.1.10/share2 /storage cifs credentials=/home/odroid/.smbpasswd,iocharset=utf8,sec=ntlm,uid=odroid  0  0'		
+     line: '/dev/sda1	/genstore	ext4	nofail	0	0'

@@ -1,0 +1,16 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  #become: yes
+  tasks:
+  - name: "copyfile"
+    copy:
+     src: samtools.sh
+     dest: /tmp/samtools.sh
+     #owner: odroid
+     #group: odroid
+     mode: 0744
+  - name: "run"
+    shell: /tmp/samtools.sh 
+    #command: ls
+

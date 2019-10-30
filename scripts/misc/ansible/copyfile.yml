@@ -1,0 +1,13 @@
+- hosts: all
+  gather_facts: no
+  remote_user: odroid
+  #become: yes
+  tasks:
+  - name: "copyfile"
+    copy:
+     src: samtools
+     dest: /genomics/samtools/samtools
+     #owner: root
+     #group: root
+     #mode: 0700
+

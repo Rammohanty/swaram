@@ -1,0 +1,7 @@
+- hosts: row0
+  gather_facts: no
+  remote_user: odroid
+  tasks:
+  - name: "run"
+    shell: /home/odroid/sorting_framework/main
+
