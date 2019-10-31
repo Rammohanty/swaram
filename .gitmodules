@@ -1,12 +1,12 @@
 [submodule "dedupli"]
 	path = dedupli
-	url = https://github.com/hasindu2008/dedupli-swaram
+	url = https://github.com/Rammohanty/swaram/dedupli-swaram
 [submodule "scripts"]
 	path = scripts
-	url = https://github.com/hasindu2008/scripts-swaram
+	url = https://github.com/Rammohanty/swaram/scripts-swaram
 [submodule "bwa-arm"]
 	path = bwa-arm
 	url = https://github.com/Rammohanty/bwa-arm.git
 [submodule "platypus-arm"]
 	path = platypus-arm
-	url = https://github.com/hasindu2008/platycflr
+	url = https://github.com/Rammohanty/swaram/platycflr
