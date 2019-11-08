@@ -1,6 +1,6 @@
 # dedupli-swaram
 
-Spurious alignment Removal, distributed splitting and data transfer for swaram
+Spurious alignment Removal, distributed splitting and data transfer for swaram using single-end reads.
 
 # building
 
