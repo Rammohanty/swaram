@@ -1,13 +1,14 @@
 /* @dedupli
 **
 ** spurious alignment removal and data distribution for swaram
+** @author: Ram Prasad Mohanty (r.mohanty@unsw.edu.au)
 ** @author: Hasindu Gamaarachchi (hasindu@unsw.edu.au)
 ** @@
 ******************************************************************************/
 /*
 MIT License
 
-Copyright (c) 2019 Hasindu Gamaarachchi
+Copyright (c) 2019 Ram Prasad Mohanty, Hasindu Gamaarachchi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
