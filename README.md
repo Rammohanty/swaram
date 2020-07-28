@@ -39,9 +39,7 @@ git clone --recursive https://github.com/Rammohanty/swaram
 
 The submodules that will be cloned are as follows.
 - bwa-arm : BWA-MEM aligner ported for ARMv7
-- dedupli : Spurious alignment Removal(SAR), distributed splitting and data transfer
 - platypus-arm : Platypus variant caller ported for ARMv7
-- scripts : scripts for execution of variant calling work-flow on SWARAM
 
 ### Building bwa-arm
 To enable execution of BWA on armv7 devices.
@@ -69,16 +67,6 @@ Now test if you can launch BWA successfully.
 ```
 
 Copy this binary accross all the devices to the location `//home/odroid/bwa-0.7.15`. You may run  `copybwa.sh` to copy this binary across the all the devices, given that you have already configured *ansible*.
-
-
-### Building dedupli
-
-```sh
-cd dedupli #assuming that you are in swaram directory
-make
-```
-
-The executable named `main` will be generated. Copy this binary accross all the devices to the location `/genomics/sorting_framework/dedupli`. You may run  `copyexe.sh` to copy this binary across the all the devices, given that you have already configured *ansible* and edited `copyexe.yml` in the current directory accordingly (*hosts*, *remote_user* and *src* fields in the *yml* file).
 
 
 ### Building platypus-arm
@@ -122,4 +110,4 @@ python Platypus.py callVariants --help #assuming that you are in platypus-arm di
 
 Copy the contents in this `Platypus_0.8.1.1_arm` directory accross all the devices to the location `/genomics/platypus`
 
-
+For further queries or concerns contact the author.
