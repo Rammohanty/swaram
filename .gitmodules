@@ -1,9 +1,3 @@
-[submodule "dedupli"]
-	path = dedupli
-	url = https://github.com/Rammohanty/swaram/dedupli-swaram
-[submodule "scripts"]
-	path = scripts
-	url = https://github.com/Rammohanty/swaram/scripts-swaram
 [submodule "bwa-arm"]
 	path = bwa-arm
 	url = https://github.com/Rammohanty/bwa-arm.git
